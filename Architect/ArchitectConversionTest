@@ -1,0 +1,85 @@
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
+
+public class ArchitectTest {
+	Architect architect = new Architect();
+	@Test
+
+	public void testCentimterToCentimeter() {
+
+		Assert.assertEquals(1,architect.convertCentimeterToCentimeter(1));
+
+	}
+	@Test
+
+	public void testMeterToCentimeter() {
+
+		Assert.assertEquals(100,architect.convertMeterToCentimeter(1));
+
+	}
+	@Test
+
+	public void testCentimeterToKilometer() {
+
+		Assert.assertEquals("0.001",architect.convertCentimeterToKilomter(100));
+
+	}
+	@Test
+
+	public void testAddMeterWithCentimeter() {
+
+		Assert.assertEquals(2,architect.addMeterWithCentimeter(1,100));
+
+	}
+	@Test
+
+	public void testAddCentimeterWithKilometerAndConvertToCentimete() {
+
+		Assert.assertEquals(100200,architect.addCentimeterWithKilometer(200,1));
+
+	}
+	@Test
+
+	public void testConvertGramToGram() {
+
+		Assert.assertEquals(1,architect.convertGramToGram(1));
+
+	}
+	@Test
+
+	public void testConvertKilogramToGram() {
+
+		Assert.assertEquals(100,architect.convertKilogramToGram(0.1));
+
+	}
+	@Test
+
+	public void testAddGramWithKilogram() {
+
+		Assert.assertEquals(1010,architect.addGramWithKilogram(10, 1));
+
+	}
+	@Test
+
+	public void testSubractGramFromKilogram() {
+
+		Assert.assertEquals(1,architect.subractGramFromKilogram(1.5,500));
+
+	}
+	@Test
+
+	public void testConvertCelsiusToFahrenheit() {
+
+		Assert.assertEquals(32,architect.convertCelsiusToFahrenheit(0));
+
+	}
+	@Test
+
+	public void testConvertKelvinToCelsius() {
+
+		Assert.assertEquals(-273,architect.convertKelvinToCelsius(0));
+
+	}
+
+}
+
